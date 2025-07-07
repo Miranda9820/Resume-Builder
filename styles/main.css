@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    margin: 0 0 0.5rem 0;
+}
+nav {
+    margin-bottom: 0.5rem;
+}
+nav button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    color: #2d3e50;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+nav button.selected, nav button:hover {
+    background: #4fc3f7;
+    color: #fff;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+#input-section, #preview-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2rem;
+    min-width: 320px;
+    max-width: 400px;
+    flex: 1 1 350px;
+}
+#resume-form h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+#resume-form input, #resume-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+#resume-form button[type="submit"] {
+    background: #2d3e50;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+#resume-form button[type="submit"]:hover {
+    background: #4fc3f7;
+}
+#preview-section h2 {
+    margin-top: 0;
+}
+#resume-preview {
+    min-height: 300px;
+    background: #f4f8fb;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    overflow-x: auto;
+}
+#export-buttons button {
+    margin-right: 0.7rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background: #2d3e50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#export-buttons button:hover {
+    background: #4fc3f7;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e0e0e0;
+    color: #333;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    #input-section, #preview-section {
+        max-width: 100%;
+        min-width: unset;
+    }
+}
+
+/* Template 1: Clean, Wide, Colorful Two-Column Layout */
+.template1 {
+    background: #f6faff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(44, 62, 80, 0.13);
+    margin: 2.5rem auto;
+    font-family: 'Lato', 'Inter', Arial, sans-serif;
+    overflow: hidden;
+    max-width: 1100px;
+    min-width: 350px;
+}
+.template1-profile {
+    padding: 2.5rem 3.5rem 1.5rem 3.5rem;
+    border-bottom: 2px solid #e3eafc;
+    background: #eaf3fb;
+}
+.template1-profile h2 {
+    color: #1b3c1b;
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.5px;
+}
+.template1-profile h3 {
+    color: #3a7bd5;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+.template1-profile p {
+    color: #232946;
+    font-size: 1.13rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.7;
+}
+
+.template1-main {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+    background: #f6faff;
+}
+.template1-col {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.template1-section h3 {
+    color: #3a7bd5;
+    font-size: 1.18rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.2px;
+    border-bottom: 2.5px solid #b6e0fe;
+    padding-bottom: 0.3rem;
+    text-transform: none;
+    background: linear-gradient(90deg, #eaf3fb 60%, transparent 100%);
+}
+.template1-section ul {
+    list-style: disc inside;
+    margin: 0.2rem 0 1.2rem 0.5rem;
+    color: #232946;
+}
+.template1-section li {
+    font-size: 1.09rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+.template1-section p {
+    font-size: 1.13rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.8;
+    color: #232946;
+}
+
+@media (max-width: 1100px) {
+    .template1 {
+        max-width: 98vw;
+    }
+    .template1-main {
+        gap: 1.5rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    .template1-profile {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+}
+@media (max-width: 900px) {
+    .template1-main {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* Template 2: Modern Two-Column Layout */
+.template2 {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', 'Inter', Arial, sans-serif;
+    background: #f7f8fa;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    margin: 2rem 0;
+    min-height: 500px;
+    overflow: hidden;
+}
+.template2-sidebar {
+    background: #232946;
+    color: #fff;
+    width: 270px;
+    min-width: 220px;
+    padding: 2.2rem 1.5rem 2.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.template2-sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+    color: #eebbc3;
+}
+.template2-sidebar section {
+    margin-bottom: 1.2rem;
+}
+.template2-sidebar .label {
+    font-weight: 700;
+    color: #eebbc3;
+    font-size: 0.98rem;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+.template2-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.2rem 0 0.7rem 0;
+}
+.template2-sidebar li {
+    font-size: 0.98rem;
+    margin-bottom: 0.3rem;
+    color: #eaeaea;
+}
+
+.template2-main {
+    flex: 1 1 0;
+    padding: 2.5rem 2.5rem 2.5rem 2rem;
+    background: #fff;
+    color: #232946;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.template2-main h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #232946;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+}
+.template2-main h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #eebbc3;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #eebbc3;
+    padding-left: 0.7rem;
+    background: linear-gradient(90deg, #f7f8fa 60%, transparent 100%);
+}
+.template2-main ul {
+    list-style: disc inside;
+    margin: 0.2rem 0 1.2rem 0.5rem;
+    color: #232946;
+}
+.template2-main li {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
+}
+.template2-main p {
+    font-size: 1.07rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .template2 {
+        flex-direction: column;
+    }
+    .template2-sidebar {
+        width: 100%;
+        min-width: unset;
+        border-radius: 16px 16px 0 0;
+    }
+    .template2-main {
+        border-radius: 0 0 16px 16px;
+    }
+}
+
+/* Template 3: Minimalist Green - Enhanced */
+.template3 {
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    color: #263238;
+    background: #f1f8f5;
+    border-left: 5px solid #43a047;
+    box-shadow: 0 2px 12px rgba(67, 160, 71, 0.07);
+    border-radius: 10px;
+    padding: 2.5rem 2.5rem 2.5rem 2rem;
+    margin: 1.5rem 0;
+}
+.template3 h2 {
+    color: #2e7d32;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+}
+.template3 h3 {
+    color: #388e3c;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 1.4rem;
+    margin-bottom: 0.4rem;
+    border-bottom: 1.5px solid #a5d6a7;
+    padding-bottom: 0.2rem;
+}
+.template3 p, .template3 li {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+/* Make preview section wider */
+#preview-section {
+    max-width: 700px;
+    min-width: 400px;
+}
+
+/* Remove bullet points from lists in templates */
+.template1 ul, .template2 ul, .template3 ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.template1 li, .template2 li, .template3 li {
+    margin-bottom: 0.4em;
+    padding-left: 0;
+} 

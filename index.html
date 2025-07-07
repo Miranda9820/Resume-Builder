@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS AI Resume Builder</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>ATS AI Resume Builder</h1>
+        <nav>
+    
+            <button id="template2-btn">Template 2</button>
+            <button id="template3-btn">Template 3</button>
+        </nav>
+    </header>
+    <main>
+        <section id="input-section">
+            <form id="resume-form">
+                <h2>Personal Information</h2>
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn URL">
+                <h2>Professional Summary</h2>
+                <textarea id="summary" name="summary" placeholder="Brief summary about yourself" rows="3"></textarea>
+                <h2>Experience</h2>
+                <textarea id="experience" name="experience" placeholder="List your work experience" rows="5"></textarea>
+                <h2>Education</h2>
+                <textarea id="education" name="education" placeholder="List your education" rows="3"></textarea>
+                <h2>Skills</h2>
+                <input type="text" id="skills" name="skills" placeholder="e.g. JavaScript, Project Management, ...">
+                <h2>Job Description (for matching)</h2>
+                <textarea id="jobdesc" name="jobdesc" placeholder="Paste the job description here" rows="4"></textarea>
+                <button type="submit">Generate Resume</button>
+            </form>
+        </section>
+        <section id="preview-section">
+            <h2>Resume Preview</h2>
+            <div id="resume-preview"></div>
+            <div id="export-buttons">
+                <button id="export-pdf">Export PDF</button>
+                <button id="export-docx">Export DOCX</button>
+                <button id="export-html">Export HTML</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ATS AI Resume Builder</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html> 
